@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="userTable">
+        <tr>
+            <td>名字</td>
+            <td>家乡</td>
+            <td>工作城市</td>
+            <td>工作</td>
+            <td>格言</td>
+        </tr>
+        <!-- <tr>
+            <td>刘五</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> -->
+    </table>
+    <script>
+        const person = {
+            name:'刘五',
+            hometown: '遵义',
+            city: '惠州',
+            job: 'Web Developer',
+            bio: '别人吃土'
+        }
+        // DOM html标签
+        // js通向html世界的编程 DOM
+        const tableElement = document.querySelector('#userTable');
+        // console.log(tableElement.innerHTML);
+        tableElement.innerHTML += `
+        <tr>
+            <td>${person.name}</td>
+            <td>${person.hometown}</td>
+            <td>${person.city}</td>
+            <td>${person.job}</td>
+            <td>${person.bio}</td>
+        </tr>
+        `;
+    </script>
+</body>
+</html>

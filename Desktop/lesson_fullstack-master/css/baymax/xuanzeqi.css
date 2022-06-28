@@ -1,0 +1,39 @@
+*
+{ 
+background-color:yellow;
+}
+p
+{ 
+background-color:yellow;
+}
+p.intro { 
+    background-color: yellow;
+  }
+  h1,p
+{ 
+background-color:yellow;
+}
+div>p
+{ 
+background-color:yellow;
+}
+div+p
+{ 
+background-color:yellow;
+}
+p~ul
+{
+background:#ff0000;
+}
+a[target]
+{ 
+background-color:yellow;
+}
+a[target]
+{ 
+background-color:green;
+}
+[title~=flower]
+{ 
+background-color:gray;
+}

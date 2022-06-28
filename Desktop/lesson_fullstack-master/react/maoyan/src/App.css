@@ -1,0 +1,7 @@
+.Contest{
+  display: flex;
+}
+li{
+  margin-left: 20px;
+  list-style-type: none;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "extends",
+  "version": "1.0.0",
+  "description": "- 构造函数绑定\r     缺点是？",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

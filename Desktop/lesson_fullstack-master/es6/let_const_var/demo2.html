@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            name:'张三',
+            hobbies: ['篮球' ,'音乐']
+        }
+        Object.freeze(obj)// 浅层 不可改变
+        // obj.hobbies[0] = '羽毛球'
+        // 让 obj 不可以被改变？ 
+        obj.name = '123';
+        obj.sex = '男';
+        obj.hobbies.unshift('羽毛球')
+        console.log(obj);
+    </script>
+</body>
+</html>

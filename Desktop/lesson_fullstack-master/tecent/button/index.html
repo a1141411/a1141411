@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEUI-Button</title>
+    <link rel="stylesheet" href="./btn.css">
+</head>
+<body>
+    <!-- html 结构 由外到内 从上到下 -->
+    <!-- 取类名是个技术活，从大厂学习一些词汇
+        1. page结构命名套路
+        2. __ BEM 国际命名规范
+        3. page  Block 新起一个区块
+        4. page__ 子元素 Element
+        5. 组件命名btn 可以复用的按钮组件 weui？
+            .weui-btn .bd-btn .tm-btn .m-btn
+            项目或公司名 作为前缀 .btn 新的一个block
+            .page>.page__hd>.page__title+.page__ft
+            .weui-messagebox>.weui-messagebox__hd{弹窗标题}+.weui-messagebox__bd{} 
+
+    -->
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">Button</h1>
+            <p class="page__desc">按钮</p>
+        </div>
+        <div class="page__bd">
+            <div class="button-sp-area">
+                <!-- BEM Block Element Modifier
+                    weui-btn 按钮的基础类
+                    再加状态类
+                状态下 css 类名  -->
+            <a href="javascript:;" class="weui-btn weui-btn_primary">主要操作1</a>
+            <a href="javascript:;" class="weui-btn weui-btn_default">次要操作1</a>
+            <a href="javascript:;" disabled class="weui-btn weui-btn_disabled">次要操作1</a>
+        </div>
+        </div>
+        <div class="page__ft"></div>
+    </div>
+
+    <!-- <div class="dialog">
+        <div class="dialog__hd">
+            <h3 class="dialog__title">弹窗标题</h3>
+            <p class="dialog bd">弹窗内容，告知当前状态，信息和解决方法，描述文字尽量控制在三行内</p>
+            <div class="dialog__ft">
+                <div class="dialog__left">辅助操作</div>
+                <div class="dialog__right">主操作</div>
+            </div>
+        </div>
+    </div> -->
+
+
+</body>
+</html>

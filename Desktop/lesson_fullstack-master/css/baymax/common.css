@@ -1,0 +1,45 @@
+/* 标签选择器 css selector */
+body{
+    background-color: pink;
+}
+/* 基础样式 */
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-bottom: 10px;
+}
+/* 业务样式 更细致的选择器 */
+/* 权重更大 优先级 
+   div p   1分
+   .boy    10分  
+   div.boy 11分
+   #       100分
+*/
+#hero{
+    background-color: green;
+}
+div.boy{
+    background-color: yellow;
+}
+.boy {
+    background-color: black;
+}
+div.baymax{
+    background-color: white;
+}
+*
+{ 
+background-color:yellow;
+}
+p
+{ 
+background-color:yellow;
+}
+p.intro { 
+    background-color: yellow;
+  }
+  h1,p
+{ 
+background-color:yellow;
+}

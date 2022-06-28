@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "rollup": "^2.74.0"
+  },
+  "name": "rollup-demo",
+  "description": "- 代码上线前，\r     把模块化的一堆代码(入口文件)，打包成一个文件\r     大大的有利于页面打开速度， 是对网络性能的优化",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "live-server",
+    "bulid": "rollup m2.js --file bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

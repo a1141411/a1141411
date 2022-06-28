@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语义化标签</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            height: 100vh;
+            background: rgb(0, 0, 0);
+        }
+        /* 响应式布局 网页可以响应设备 宽度 不能写死 px 100vw  */
+    </style>
+</head>
+<body>
+    <!-- 能够让html标签有更多的语义传达出来  -->
+    <div class="page">
+        <!-- html5 语义化标签 
+            - 可以和div一样做盒子 块级元素都适合做盒子
+            - 可读性更强 团队 爬虫 有利于百度等分析网页的内容
+                用户在搜素的时候, 可以把相关的内容更好的推荐出来
+                网页的时候, 语义化更好, 百度的排名更前一些
+        -->
+        <header class="header">header</header>
+        <!-- 导航 -->
+        <nav class="nav">nav</nav>
+        <main class="main">
+            <!-- 文章标签 -->
+            <article class="article">
+                <!-- 信息过载时代
+                文章 -->
+                <!-- 比div 表达不同的盒子外
+                还可以传达出不同性质的内容 -->
+            <section class="content">
+                <h1>1433223</h1>
+                <p>
+                    A
+                </p>
+            </section>
+            <section class="">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            </section>
+            </article>
+            <!-- 侧边栏 放广告 -->
+            <aside class="aside">aside</aside>
+        </main>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>

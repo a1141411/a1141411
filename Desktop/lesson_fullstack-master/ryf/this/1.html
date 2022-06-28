@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this底层原理</title>
+</head>
+<body>
+    <script>
+        // 函数 在内存中其实是独立的
+        // {} 堆内存， 引用关系
+        // obj 放在栈内存中 obj 全局变量 内存地址  大的内存空间
+        // obj.bar obj .bar 1      不要太多空间 放在栈内存
+        // 匿名函数 在独立的堆内存中， 申请空间 obj.foo -> 引用关系
+        // 执行时的上下文环境(作用域) 执行栈之中 (js) js运行 执行栈
+
+        var obj = {
+            bar: 1, 
+            foo: function() {
+                var x = 2;
+                console.log(this);
+            }
+        }
+        // foo 存的是一个地址， 指向了函数所在的地址
+        var foo = obj.foo; // 函数体
+        var bar = 2;
+        obj.foo(); // 出栈
+        foo();
+    </script>
+</body>
+</html>
